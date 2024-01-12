@@ -1,0 +1,57 @@
+﻿
+@{
+    ViewData["Title"] = "GetAll";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="text-center">Jugadores</h1>
+<br />
+<div class="container">
+    <table>
+        <thead>
+            <tr>
+                <th>Id Jugador</th>
+                <th>Nombre</th>
+                <th>Apellido Paterno</th>
+                <th>Apellido Materno</th>
+                <th>Foto</th>
+                <th>Nacionalidad</th>
+                <th>Id Pais</th>
+                <th>Nombre Pais</th>
+                <th>Fecha Nacimiento</th>
+            </tr>
+
+
+        </thead>
+
+        <tbody>
+
+            @foreach(PL.Models.Jugador jugador in Model.Jugadores)
+            {
+                <tr>
+
+                    <td>@jugador.IdJugador</td>
+                    <td>@jugador.Nombre</td>
+                    <td>@jugador.ApellidoPaterno</td>
+                    <td>@jugador.ApellidoMaterno</td>
+                    <td>@jugador.Foto</td>
+                    <td>@jugador.Nacionalidad</td>
+                    <td>@jugador.Pais.IdPais</td>
+                    <td>@jugador.Pais.Nombre</td>
+                    
+
+
+                </tr>
+                
+            }
+
+
+        </tbody>
+
+
+
+    </table>
+    
+
+</div>
+

@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewData["Title"] = "GetAll";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="text-center">Paises</h1>
+<br />
+
+<div class="container">
+    <table class="table table-striped table-warning">
+        <thead>
+            <tr>
+                <th>Id Pais</th>
+                <th>Nombre</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(PL.Models.Pais pais in Model.Paises)
+            {
+                <tr>
+                    <td>@pais.IdPais</td>
+                    <td>@pais.Nombre</td>
+
+                </tr>
+            }
+        </tbody>
+
+    </table>
+
+</div>

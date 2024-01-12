@@ -1,0 +1,102 @@
+﻿
+@{
+    ViewData["Title"] = "Inicio";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="text-center">Bienvenido</h1>
+<br />
+
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+
+    <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+            <img src="https://www.nebrija.com/medios/nebrijaglobalcampus/wp-content/uploads/sites/31/2020/06/shutterstock_1066064930b-scaled.jpg" class="d-block w-100" alt="Cargando">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+            <img src="https://www.nexcare.com.mx/wps/wcm/connect/10c4f9c8-dec9-45b6-bc76-a71c6fc00c91/1/Actividades_deportivas_1200x400.jpg?MOD=AJPERES" class="d-block w-100" alt="Cargando">
+        </div>
+        <div class="carousel-item">
+            <img src="https://conecta.tec.mx/sites/default/files/styles/header_full/public/2021-12/foto-portada-deportes-en-el-2022.jpg?itok=cj5bToMV" class="d-block w-100" alt="Cargando">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+
+</div>
+
+<br />
+<br />
+
+<div class="row">
+
+    <div class="col-md-6">
+        <div class="card" style="width: 18rem;">
+            <img src="https://cdn-ehflo.nitrocdn.com/UOvVgTOyzUrmhYwfcXfLEQcHpnXvZZvZ/assets/static/optimized/rev-8814dc6/blog/wp-content/uploads/2022/02/AdobeStock_315861649-1.jpeg" class="card-img-top" alt="Cargando">
+            <div class="card-body">
+                <h5 class="card-title">Estadios</h5>
+                <a href="@Url.Action("GetAll","Estadio")" class="btn btn-primary">Go</a>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="col-md-6">
+
+        <div class="card" style="width: 18rem;">
+            <img src="https://cadenaser.com/resizer/JN10rfnkYyf5z-9oOSoToW68hRE=/736x552/filters:format(jpg):quality(70)/cloudfront-eu-central-1.images.arcpublishing.com/prisaradio/XNOHFG2XS5AN7CNMSFVMIZSWQQ.jpg" class="card-img-top" alt="Cargando">
+            <div class="card-body">
+                <h5 class="card-title">Jugadores</h5>
+                <a href="@Url.Action("GetAll, Jugador")" class="btn btn-primary">Go</a>
+            </div>
+        </div>
+    </div>
+
+<div>
+
+
+
+<br />
+
+<div class="row">
+
+    <div class="col-md-6">
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://e00-mx-marca.uecdn.es/mx/assets/multimedia/imagenes/2023/02/14/16764003869338.jpg" class="card-img-top" alt="Cargando">
+                    <div class="card-body">
+                        <h5 class="card-title">Equipos</h5>
+                        <a href="@Url.Action("GetAll", "Equipo")" class="btn btn-primary">Go</a>
+                    </div>
+                </div>
+    </div>
+
+
+<br />
+
+
+<div class="col-md-6">
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://cdn2.mediotiempo.com/uploads/media/2022/06/22/cuando-inician-las-ligas-top.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ligas</h5>
+                        <a href="@Url.Action("GetAll", "Liga")" class="btn btn-primary">Go</a>
+                    </div>
+                </div>
+
+
+
+</div>
+
+
+
+</div>
